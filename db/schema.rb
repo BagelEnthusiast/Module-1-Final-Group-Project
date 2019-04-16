@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_161429) do
   end
 
   create_table "party_members", force: :cascade do |t|
-    t.integer "party_member_id"
+    t.string "name"
     t.integer "temp_health"
     t.integer "perm_health"
     t.integer "speed"

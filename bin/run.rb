@@ -8,7 +8,11 @@ require_all 'app'
 
 #$prompt = TTY::Prompt.new
 $prompt = TTY::Prompt.new
-$prompt.ask('What is your name?', default: ENV['USER'])
+#$prompt.ask('What is your name?', default: ENV['USER'])
+
+puts "\e[H\e[2J"
+
+menu_choice()
 
 #prompt.ask('What is your name?', default: ENV['USER'])
 #binding.pry
