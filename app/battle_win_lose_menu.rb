@@ -1,14 +1,15 @@
 def battle_win_menu(party_member, opponent)
   puts "\e[H\e[2J"
 
-  stat_update_win(party_member, opponent)
+  win_stat_choice(party_member, opponent)
 
-  new_p_health = party_member.perm_health += 10
+  puts "You Won! #{opponent.name} has been defeated. #{party_member.name}'s stats:\n
+  attack: #{party_member.attack}\n
+  health: #{party_member.perm_health}"
 
-  new_o_health = opponent.perm_health -= 10
+  delete_enemy(opponent)
 
-  puts "You Won! #{party_member.name}'s health is now #{new_p_health}. #{opponent.name}'s
-    health is now #{new_o_health}"
+  continue_choice()
 end
 
 def battle_lose_menu(party_member, opponent)

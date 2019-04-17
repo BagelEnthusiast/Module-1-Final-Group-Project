@@ -1,6 +1,6 @@
 def start_random_battle(party_member)
   puts "\e[H\e[2J"
-  if Enemy.first == nil
+  if Enemy.all.first == nil
     win_game_menu()
   end
 
@@ -10,8 +10,12 @@ def start_random_battle(party_member)
 end
 
 def pick_enemy
-  random_number = rand(1..3)
-  new_enemy = Enemy.find(random_number)
+  # random_number = rand(1..3)
+  # new_enemy = Enemy.find(random_number)
+  # return new_enemy
+  
+
+  new_enemy = Enemy.all.shuffle[0]
   return new_enemy
 end
 
