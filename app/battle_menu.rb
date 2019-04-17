@@ -11,14 +11,14 @@ def battle_choice(party_member, opponent)
     when "Attack"
        fight(party_member, opponent)
     when "Run"
-        lose_menu(party_member, opponent)
+        battle_lose_menu(party_member, opponent)
     end
 end
 
 def fight(party_member, opponent)
     random_boolean = [true, false].sample
-    win_menu(party_member, opponent) if random_boolean == true
-    lose_menu(party_member, opponent) if random_boolean == false
+    battle_win_menu(party_member, opponent) if random_boolean == true
+    battle_lose_menu(party_member, opponent) if random_boolean == false
   end
 
 

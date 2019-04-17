@@ -8,6 +8,7 @@ end
 def menu_choice
   case menu
   when "New Game"
+    
     party_member_choice()
   when "Exit"
     exit!
