@@ -9,6 +9,10 @@ def battle_win_menu(party_member, opponent)
 
   delete_enemy(opponent)
 
+  if Enemy.all.first == nil
+    win_game_menu()
+  end
+
   continue_choice()
 end
 
