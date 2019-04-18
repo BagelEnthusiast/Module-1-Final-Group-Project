@@ -6,6 +6,7 @@ def fight(party_member, opponent)
     if opponent.health > 0
       damage_calc(opponent, party_member)
     end
+    battle_screen(party_member, opponent)
     break if party_member.health <= 0 || opponent.health <= 0
     case battle_menu()
     when "Attack"

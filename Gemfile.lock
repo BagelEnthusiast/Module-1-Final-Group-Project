@@ -150,7 +150,9 @@ DEPENDENCIES
   sinatra-activerecord
   sqlite3
   tty
+  tty-progressbar
   tty-prompt
+  tty-table
 
 BUNDLED WITH
    1.17.3
