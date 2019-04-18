@@ -20,7 +20,7 @@ def battle_lose_menu(party_member, opponent)
 
   stat_update_lose(opponent)
 
-  puts "You lose. #{opponent.name}'s health is now #{opponent.perm_health}'"
+  puts "You lose. #{opponent.name}'s health is now #{opponent.health}'"
   sleep(4)
 
   continue_choice()

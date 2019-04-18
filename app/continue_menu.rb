@@ -8,7 +8,7 @@ def continue_menu
   def continue_choice
     case continue_menu
     when "Yes"
-      party_member_choice()
+      start_random_battle()
     when "No"
       exit!
     end

@@ -9,7 +9,7 @@ def menu_choice
   case menu
   when "New Game"
     #reseed_data()
-    party_member_choice()
+    start_random_battle()
   when "Exit"
     exit!
   end

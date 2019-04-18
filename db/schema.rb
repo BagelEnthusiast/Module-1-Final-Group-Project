@@ -19,8 +19,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_161429) do
 
   create_table "enemies", force: :cascade do |t|
     t.string "name"
-    t.integer "temp_health"
-    t.integer "perm_health"
+    t.integer "health"
     t.integer "speed"
     t.integer "attack"
     t.integer "defense"
@@ -28,8 +27,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_161429) do
 
   create_table "party_members", force: :cascade do |t|
     t.string "name"
-    t.integer "temp_health"
-    t.integer "perm_health"
+    t.integer "health"
     t.integer "speed"
     t.integer "attack"
     t.integer "defense"
