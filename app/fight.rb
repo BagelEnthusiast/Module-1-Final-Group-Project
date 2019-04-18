@@ -4,6 +4,7 @@ def fight(party_member, opponent)
   while party_member.health > 0 && opponent.health > 0
     damage_calc(party_member, opponent)
     if opponent.health > 0
+        #select_move()
       damage_calc(opponent, party_member)
     end
     battle_screen(party_member, opponent)
@@ -23,7 +24,7 @@ def fight(party_member, opponent)
 end
 
 def damage_calc(attacker, defender)
-  roll = rand(1..20)
+  roll = rand(1..10)
   damage = (attacker.attack.to_f * (10.0 / defender.defense.to_f)) + roll.to_f
   defender.health -= damage
   defender.save
