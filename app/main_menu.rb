@@ -8,7 +8,7 @@ end
 def menu_choice
   case menu
   when "New Game"
-    #reseed_data()
+    restart_game()
     start_random_battle()
   when "Exit"
     exit!

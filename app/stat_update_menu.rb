@@ -17,6 +17,7 @@ def win_stat_choice(party_member, opponent)
 end
 
 def stat_update_lose(opponent)
-  opponent.health += 10
+  opponent.health += 15
+  opponent.attack += 3
   opponent.save
 end

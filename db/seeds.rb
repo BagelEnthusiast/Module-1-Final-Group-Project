@@ -9,5 +9,5 @@ whale = Enemy.create(name: "Whale", health: 70, speed: 2, attack: 6, defense: 12
 eagle = Enemy.create(name: "Eagle", health: 50, speed: 15, attack: 20, defense: 4)
 
 #battles
-battle1 = Battle.create(party_member_id: lion.id, enemy_id: dragon.id)
+#battle1 = Battle.create(party_member_id: lion.id, enemy_id: dragon.id)
 

@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_161429) do
   create_table "battles", force: :cascade do |t|
     t.integer "party_member_id"
     t.integer "enemy_id"
+    t.text "winner"
+    t.text "loser"
   end
 
   create_table "enemies", force: :cascade do |t|

@@ -8,7 +8,13 @@ def start_random_battle #(party_member)
 end
 
 def pick_enemy
-  new_enemy = Enemy.all.shuffle[0]
+  alive_enemies = []
+  Enemy.all.each do |enemy|
+    alive_enemies << enemy if enemy.health > 0
+  end
+  
+  
+  new_enemy = alive_enemies.shuffle[0]
   return new_enemy
 end
 
